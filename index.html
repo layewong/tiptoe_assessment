@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Ti, initial-scale=1.0">
+    <title>TipToe Soles Home</title>
+    <link rel="icon" href="assets/TipToe Soles_Logo_colour.png"> <!-- show in front the the homepage-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="index.html"> <!--This is logo on top left-->
+            <img src="assets/TipToe Soles_Logo_colour.png" class="logo" alt="Tiptoe Soles logo">
+        </a>
+
+        <div class="header-right">
+            <nav class="usernav"> <!--This is another button-->
+                <a href="wishlish.html"><img src="assets/wishlist.png" class="wishlist">&nbsp; Wishlist</a>
+                <a href="profile.html"><img src="assets/profile.png" class="wishlist">&nbsp;  Profile</a>
+            </nav>
+        </div>
+        
+        <form id="search-form" method="get" action="https://example.com/form/data"> <!--This is search bar-->
+                <input type="search" name="keywords" id="search-keywords" placeholder="Search for a product...">
+                <button class="button" type="submit"><img src="assets/search.png" class="wishlist">  Search</button>
+        </form>
+
+        <button class="nav-button" ><img src="assets/menu.png" class="wishlist"></button>
+
+
+    </header>
+
+    <section class="container">
+        <aside class="sidebar">
+            <nav class="main-menu">
+                <a class="menu" href="index.html">Home</a>
+                <a class="menu" href="aboutus.html">About us</a>
+                <a class="menu" href="index.html">Product</a>
+                <a class="menu" href="index.html">Service</a>
+                <a class="menu" href="contact.html">Contact</a>
+                <a class="menu" href="index.html">Feedback</a>
+                <a class="menu" href="index.html">Sign In</a>
+
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="slideshow" data-flickity='{ "cellAlign": "center" }'>
+              <div class="slide">
+                <img src="assets/Slide1.png" class="slidephoto" alt="Tiptoe Soles logo">
+           
+              </div>
+              <div class="slide">
+                <img src="assets/Slide2.png" class="slidephoto" alt="Tiptoe Soles logo">
+             
+              </div>
+              <div class="slide">
+                <img src="assets/Slide3.png" class="slidephoto" alt="Tiptoe Soles logo">
+              
+              </div>
+            </div>
+
+            <div class="feature-product">
+
+                <div class="selected-card">
+                    <img src="assets/selected product.png" class="main_product" alt="Seasonal Selection">
+                </div>
+
+                <div class="selected">
+                    <div class="product-name">sally tan</div>
+                    <div class="price">$150</div>
+                    <p>this is product description</p>
+                </div>
+            </div>  
+
+
+            <div class="product-card">
+                <img src="assets/Gary Tan.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-name">Gary Tan</div>
+                <div class="price">$100.00</div>
+                <p>Man Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Gary Black.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-name">Gary Black</div>
+                <div class="price">$100.00</div>
+                <p>Man Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Sally Tan.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-name">Sally Tan</div>
+                <div class="price">$90.00</div>
+                <p>Woman Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Sally Black.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-name">Sally Black</div>
+                <div class="price">$89.99</div>
+                <p>Woman Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Work and Walk Chesnut.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-name">Work and Walk Chestnut</div>
+                <div class="price">$150</div>
+                <p>Man Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Heavenly Black.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-name">Heavenly Black</div>
+                <div class="price">$150</div>
+                <p>Woman Shoes</p>
+            </div>
+          </main>
+
+        
+    </section>
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="return.html">Return Policies</a>
+            <a href="exchange.html">Exchange policies</a>
+            <a href="delivery.html">Delivery policies</a>
+
+        </nav>
+        <nav class="footer-nav">
+
+            <a href="payment.html">Payment</a>
+            <a href="tnc.html">Terms and Conditions</a>
+
+        </nav>
+        <nav class="footer-nav">
+
+            <a href="facebook.html"><img src="assets/facebook.png" class="socialmedia">&nbsp; Facebook</a>
+            <a href="instagram.html"><img src="assets/ins.png" class="socialmedia">&nbsp; Instagram</a>
+            <a href="twitter.html"><img src="assets/twitter.png" class="socialmedia">&nbsp; Twitter</a>
+        </nav>
+
+
+        <p>&copy; Copyright TipToe Soles 2023</p>
+    </footer>
+</body>
+</html>

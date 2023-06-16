@@ -1,0 +1,253 @@
+:root{
+    --main-color:#323232;
+    --aside-color: #F7C903;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFCD1;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+.logo { 
+    max-width: 100px;
+    padding:10px;
+}
+
+.main-header {
+    background-color: var(--main-color);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+ 
+}
+
+#search-form {
+    justify-self: center;
+    grid-column:3;
+    margin-top: -40px;
+    
+}
+.nav-button {
+    display: none;
+}
+
+.button{
+    background-color:#323232;
+    border: none;
+    color: white;
+    font: 12px "Open Sans light", sans-serif;
+}
+
+
+.header-right {
+    grid-column: 3;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.wishlist {
+    max-width: 18px;
+    
+}
+
+.usernav {
+    font: 12px "Open Sans light", sans-serif;
+    ;
+}
+
+.usernav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.usernav a:link {
+    color: #f1eded;
+}
+
+
+.main-footer {
+    background-color: var(--main-color);
+    min-height: 10em;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 8em 1fr;
+    font: 20px "Open Sans light", sans-serif;
+    position:relative;
+           
+}
+
+.container a {
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+}
+.container a:link {
+    color: white;
+  }
+  
+.container a:visited {
+    color: white;
+  }
+
+.container a:hover {
+    color:grey;
+    background: #FFFCD1 ;
+  }
+
+
+
+.sidebar {
+    background-color: var(--aside-color);
+    
+}
+
+.main-menu {
+    display: flex;
+    flex-direction:column ;
+    row-gap: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+
+.menu {
+    border-style: solid;
+    border-color: var(--aside-color) ;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 120px;
+   
+}
+
+.slide {
+    background-color: white;
+    width: 100%;
+    
+    display:grid;
+    place-items: center center;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+
+.slideshow {  
+    grid-column: span 3;
+  }
+
+.slideshow img{
+    max-width: 100%;
+}
+
+.flickity-viewport {
+    
+  }
+
+.feature-product{
+    grid-column: span 3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+    padding: 40px 40px;
+}
+
+
+
+.desc {
+    grid-column:3;
+}
+
+.selected {
+    grid-column:span 1;
+    
+}
+
+
+
+
+.product-card img {
+    max-width: 100%;
+    box-shadow: 1px 1px 4px 1px lightgrey;
+ }
+
+.product-name {
+    font: 16px "Open Sans light", sans-serif;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.price {
+    font: 18px "Gotham SSm A", sans-serif;
+    padding-left: 5px;
+    padding-bottom: 0px;
+}
+
+p {
+    font: 10px "Open Sans light", sans-serif;
+    padding-left: 5px;
+    padding-top: 0px;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    column-gap: 30px;
+    row-gap: 50px;
+    padding: 40px 40px;
+    font: 13px "Open Sans light", sans-serif;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction:column ;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.main-footer p{
+    grid-column: 2;
+    text-align: center;
+    color: #f1eded;
+    padding-top: 100px;
+
+}
+
+.main-footer a {
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+}
+.main-footer a:link {
+    color: grey;
+  }
+  
+.main-footer a:visited {
+    color: white;
+  }
+
+.main-footer a:hover {
+    color:white;
+    
+  }
+
+.socialmedia{
+    width: 20px;
+    
+}
