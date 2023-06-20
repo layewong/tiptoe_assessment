@@ -1,6 +1,6 @@
 function onLoad() {
     // create reference to button
-    const btn = document.querySelector(".nav-button")
+    const btn = document.querySelector(".menu-button")
     // create reference to the menu
     const menu = document.querySelector(".sidebar")
     // add a listener for a click on button

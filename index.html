@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Ti, initial-scale=1.0">
     <title>TipToe Soles Home</title>
-    <link rel="icon" href="assets/TipToe Soles_Logo_colour.png"> <!-- show in front the the homepage-->
+    <link rel="icon" href="assets/TipToe_Soles_Logo_small.png"> <!-- show in front the the homepage-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -15,26 +15,35 @@
 
 <body>
     <header class="main-header">
-        <a href="index.html"> <!--This is logo on top left-->
-            <img src="assets/TipToe Soles_Logo_colour.png" class="logo" alt="Tiptoe Soles logo">
-        </a>
+        <div class="header-left">
+            <a href="index.html"> <!--This is logo on top left-->
+                <img src="assets/TipToe_Soles_Logo_small.png" class="logo" alt="Tiptoe Soles logo">
+            </a>
+            <button class="menu-button" ><img src="assets/menu.png"></button>
 
+        </div>
+        <!-- <a href="index.html"> 
+            <img src="assets/TipToe_Soles_Logo_small.png" class="logo" alt="Tiptoe Soles logo">
+        </a> -->
+        
         <div class="header-right">
-            <nav class="usernav"> <!--This is another button-->
-                <a href="wishlish.html"><img src="assets/wishlist.png" class="wishlist">&nbsp; Wishlist</a>
-                <a href="profile.html"><img src="assets/profile.png" class="wishlist">&nbsp;  Profile</a>
-            </nav>
+                <nav class="usernav"> <!--This is another button-->
+                    <a href="wishlish.html"><img src="assets/wishlist.png" alt="Wishlist">&nbsp; Wishlist</a>
+                    <a href="profile.html"><img src="assets/profile.png" alt="Profile">&nbsp;  Profile</a>
+                    <a href="shopping.html"><img src="assets/cart.png" alt="Profile">&nbsp;  Cart</a>
+                </nav>
+
+                <form id="search-form" method="get" action="https://example.com/form/data"> <!--This is search bar-->
+                    <input type="search" name="keywords" id="search-keywords" placeholder="Search for a product..." class="search">
+                    <button class="search-button" type="submit"><img src="assets/search.png">Search</button>
+                </form>            
         </div>
         
-        <form id="search-form" method="get" action="https://example.com/form/data"> <!--This is search bar-->
-                <input type="search" name="keywords" id="search-keywords" placeholder="Search for a product...">
-                <button class="button" type="submit"><img src="assets/search.png" class="wishlist">  Search</button>
-        </form>
+        <!-- <button class="menu-button" ><img src="assets/menu.png"></button> -->
 
-        <button class="nav-button" ><img src="assets/menu.png" class="wishlist"></button>
-
-
+        
     </header>
+
 
     <section class="container">
         <aside class="sidebar">
@@ -43,27 +52,25 @@
                 <a class="menu" href="aboutus.html">About us</a>
                 <a class="menu" href="index.html">Product</a>
                 <a class="menu" href="index.html">Service</a>
-                <a class="menu" href="contact.html">Contact</a>
+                <a class="menu" href="contact.html">Contact Us</a>
                 <a class="menu" href="index.html">Feedback</a>
                 <a class="menu" href="index.html">Sign In</a>
-
             </nav>
         </aside>
 
         <main class="content">
             <div class="slideshow" data-flickity='{ "cellAlign": "center" }'>
-              <div class="slide">
-                <img src="assets/Slide1.png" class="slidephoto" alt="Tiptoe Soles logo">
-           
-              </div>
-              <div class="slide">
-                <img src="assets/Slide2.png" class="slidephoto" alt="Tiptoe Soles logo">
-             
-              </div>
-              <div class="slide">
-                <img src="assets/Slide3.png" class="slidephoto" alt="Tiptoe Soles logo">
-              
-              </div>
+                <div class="slide">
+                    <img src="assets/Slide1.jpg" class="slidephoto" alt="New Arrival">            
+                </div>
+
+                <div class="slide">
+                    <img src="assets/Slide2.jpg" class="slidephoto" alt="New Arrival">                
+                </div>
+                
+                <div class="slide">
+                    <img src="assets/Slide3.jpg" class="slidephoto" alt="New Arrival">
+                </div>
             </div>
 
             <div class="feature-product">
@@ -73,53 +80,83 @@
                 </div>
 
                 <div class="selected">
-                    <div class="product-name">sally tan</div>
-                    <div class="price">$150</div>
-                    <p>this is product description</p>
+                  
+                    <div class="collection">Top Product</div>
+                   
+                
+                    <div class="collection-name">Clancy Blue</div>
+                    <div class="collection-price">$59.00</div>
+                    <p>Unisex Shoes</p>
+                    <p>The Clancy sandal allows air circulation due to the holes on each side. These sandals provide support to tired feet. The arch support design eliminates any strain or imbalance.  Stretchable mesh fabric allows an easy fit Memory foam insoles</p>
                 </div>
+                
             </div>  
+
+            <div class="line">
+                <div class="collection">Seasonal Collection</div>               
+            </div>
 
 
             <div class="product-card">
-                <img src="assets/Gary Tan.png" class="main_product" alt="Seasonal Selection">
-                <div class="product-name">Gary Tan</div>
-                <div class="price">$100.00</div>
-                <p>Man Shoes</p>
+                <img src="assets/Gary Tan.png" class="main_product" alt="product">
+                <div class="product-like">
+                    <div class="product-name">Gary Tan</div>
+                    <button class="like-button"><img src="assets/wishlist.png" class="like" alt="wishlist"></button>
+                </div>
+                
+                <div class="price">$79.00</div>
+                <p>Men's Shoes</p>
+                
             </div>
 
             <div class="product-card">
                 <img src="assets/Gary Black.png" class="main_product" alt="Seasonal Selection">
-                <div class="product-name">Gary Black</div>
-                <div class="price">$100.00</div>
-                <p>Man Shoes</p>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/Sally Tan.png" class="main_product" alt="Seasonal Selection">
-                <div class="product-name">Sally Tan</div>
-                <div class="price">$90.00</div>
-                <p>Woman Shoes</p>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/Sally Black.png" class="main_product" alt="Seasonal Selection">
-                <div class="product-name">Sally Black</div>
-                <div class="price">$89.99</div>
-                <p>Woman Shoes</p>
+                <div class="product-like">
+                    <div class="product-name">Gary Black</div>
+                    <button class="like-button"><img src="assets/wishlist.png" class="like" alt="wishlist"></button>
+                </div>
+                <div class="price">$79.00</div>
+                <p>Men's Shoes</p>
             </div>
 
             <div class="product-card">
                 <img src="assets/Work and Walk Chesnut.png" class="main_product" alt="Seasonal Selection">
-                <div class="product-name">Work and Walk Chestnut</div>
-                <div class="price">$150</div>
-                <p>Man Shoes</p>
+                <div class="product-like">
+                    <div class="product-name">Work and Walk Chesnut</div>
+                    <button class="like-button"><img src="assets/wishlist.png" class="like" alt="wishlist"></button>
+                </div>
+                <div class="price">$85.00</div>
+                <p>Men's Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Sally Black.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-like">
+                    <div class="product-name">Sally Black</div>
+                    <button class="like-button"><img src="assets/wishlist.png" class="like" alt="wishlist"></button>
+                </div>
+                <div class="price">$75.00</div>
+                <p>Women's Shoes</p>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/Sally Tan.png" class="main_product" alt="Seasonal Selection">
+                <div class="product-like">
+                    <div class="product-name">Sally Tan</div>
+                    <button class="like-button"><img src="assets/wishlist.png" class="like" alt="wishlist"></button>
+                </div>
+                <div class="price">$75.00</div>
+                <p>Women's Shoes</p>
             </div>
 
             <div class="product-card">
                 <img src="assets/Heavenly Black.png" class="main_product" alt="Seasonal Selection">
-                <div class="product-name">Heavenly Black</div>
-                <div class="price">$150</div>
-                <p>Woman Shoes</p>
+                <div class="product-like">
+                    <div class="product-name">Heavenly Black</div>
+                    <button class="like-button"><img src="assets/wishlist.png" class="like" alt="wishlist"></button>
+                </div>
+                <div class="price">$90.00</div>
+                <p>Women's Shoes</p>
             </div>
           </main>
 
@@ -130,19 +167,18 @@
             <a href="return.html">Return Policies</a>
             <a href="exchange.html">Exchange policies</a>
             <a href="delivery.html">Delivery policies</a>
-
         </nav>
-        <nav class="footer-nav">
 
+        <nav class="footer-nav">
             <a href="payment.html">Payment</a>
             <a href="tnc.html">Terms and Conditions</a>
-
+            <a href="policy.html">Privacy Policy</a>
         </nav>
-        <nav class="footer-nav">
 
-            <a href="facebook.html"><img src="assets/facebook.png" class="socialmedia">&nbsp; Facebook</a>
-            <a href="instagram.html"><img src="assets/ins.png" class="socialmedia">&nbsp; Instagram</a>
-            <a href="twitter.html"><img src="assets/twitter.png" class="socialmedia">&nbsp; Twitter</a>
+        <nav class="footer-nav">
+            <a href="facebook.html"><img src="assets/facebook.png" alt="Facebook">&nbsp; Facebook</a>
+            <a href="instagram.html"><img src="assets/ins.png" alt="Instagram">&nbsp; Instagram</a>
+            <a href="twitter.html"><img src="assets/twitter.png" alt="Twitter">&nbsp; Twitter</a>
         </nav>
 
 

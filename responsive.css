@@ -1,15 +1,55 @@
 @media screen and (max-width:768px) {
     .logo{
         width:50px;
+    
     }
 
     .main-header {
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto auto auto;
     }
 
-    .nav-button {
+    .header-right {
+        grid-column: 3;
+        padding: 5px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        row-gap: 50px;   
+    }
+    .search {
+        font: 10px "Open Sans light",sans-serif;   
+    }
+    .search-button{
+        font: 10px "Open Sans light",sans-serif;  
+    }
+
+
+    .menu-button {
+        grid-column: 1;
         display: block;
         background-color: transparent;
+        border: none;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        justify-self: start;
+              
+    }
+    .menu-button:hover {
+        transform: scale(1.1);
+    }
+
+    .menu-button img{
+        max-width: 18px;
+    }
+
+    .container {
+        grid-template-columns:auto 1fr ;
+    }
+
+    .container a {
+        padding:3px 5px;
+        font-size: 12px;
     }
 
     .sidebar {
@@ -25,13 +65,137 @@
         left: 0px;
     }
 
-    .container {
-        grid-template-columns:auto 1fr ;
+    .main-menu {
+        row-gap: 15px;
+        padding: 10px;
     }
 
     .content {
         grid-column-start: 2;
+        column-gap: 15px;
+        row-gap: 20px;
+        padding: 10px;
     }
+
+    .feature-product{
+        padding-top:20px;
+
+    }
+
+    .selected {
+        max-width: 100%;
+        /* margin-left: 150px; */
+        padding-left: 10px;
+        margin-top: -10px;
+    }
+    .collection {
+    font-size: 18px;
+    padding:0px 10px;
+    }
+    .collection-name{
+        /* text-align: center; */
+        font-size: 14px;
+        padding:5px 0px 0px 5px;
+    }
+    .collection-price{
+        font: 10px "Gotham SSm A", sans-serif;
+        padding:0px 0px 0px 5px;
+        /* text-align: center; */
+    }
+    .selected p{
+        font-size: 8px;
+        padding:0px 0px 0px 5px;
+        /* text-align: center; */
+    }
+
+
+    .like {
+        max-width: 15px;
+    }
+    .main-footer {
+        min-height: 6em;
+    }
+
+    .product-name {
+        font-size: 12px ;
+    }
+
+    .price {
+        font-size:10px
+    }
+    p {
+        font-size: 8px;
+    }
+    .footer-nav {
+        font-size: 10px;
+        
+    }
+    .footer-nav img{
+        max-width: 10px;
+        margin-bottom: -1px;
+    }
+    .main-footer p{
+        font-size: 10px;
+    }
+    .main-footer a {
+        padding: 2px;
+    }
+
+    .about-us h1{
+        font-size: 20px;
+        padding:5px;
+    }
+    
+    .about-us p{
+        font-size: 10px;
+        padding:0px 10px 150px 10px
+    }
+
+    .contact-info {
+        column-gap: 10px;
+        padding: 10px;
+    }
+    .contact-info img{
+        width:30px;
+    }
+    .contact-info h4{
+        font: 14px "Open Sans light",sans-serif;
+        margin: 5px;
+       
+    }
+    .contact-info p{
+        font: 10px "Open Sans light",sans-serif;
+    }
+    .contact h1{
+        font:24px "Open Sans light",sans-serif;  
+        padding: 4px;
+    }
+    .input-row{
+        display:flex;
+        /* justify-content: space-between; */
+        column-gap: 40px;
+        margin-bottom: 20px;
+    }
+    .contact input{
+        font:10px "Open Sans", sans-serif;
+    }
+    .contact label{
+        font-size: 12px;
+    }
+    form {
+        padding:10px 0px;
+    }
+    .contact button{
+        width:80px;
+        height:20px;
+        border-radius: 30px;
+        margin-top:5px;
+        box-shadow: 0px 2px 10px 0px #D9D9D9;
+    }
+    textarea{
+        font: 10pt "Open Sans", sans-serif;
+    }
+   
 }
 
 
