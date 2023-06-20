@@ -206,7 +206,7 @@ p {
 
 .main-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 30px 30px 30px;
     column-gap: 30px;
     row-gap: 50px;
